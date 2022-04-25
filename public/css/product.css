@@ -1,0 +1,40 @@
+.product-form {
+    width: 20rem;
+    max-width: 90%;
+    margin: auto;
+    display: block;
+}
+
+.product-item {
+    width: 20rem;
+    max-width: 95%;
+    margin: 1rem;
+}
+
+.product__title {
+    font-size: medium;
+    text-align: center;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+.product__price {
+    text-align: center;
+    color: #4d4d4d;
+}
+
+.product__description {
+    text-align: center;
+}
+
+.card__image img{
+    height: -webkit-fill-available;
+    display: block;
+    margin-inline: auto;
+    object-fit: scale-down;
+}
+
+.card-body p{
+    max-height: 100px;
+    overflow-y: scroll;
+}
