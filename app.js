@@ -4,7 +4,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 const errorController = require('./controllers/error');
-const homeController = require('./controllers/index');
+//const homeController = require('./controllers/index');
 const mongoConnect = require('./util/database').mongoConnect
 const User = require('./models/user')
 
@@ -35,8 +35,8 @@ app.use(shopRoutes);
 app.use(errorController.get404);
 
 mongoConnect(() => {
-  app.listen(8080, () => {
-    console.log('Example app listening on port 8080!')
-    app.use(homeController.getHome);
+  app.listen(3000, () => {
+    console.log('Example app listening on port 3000!')
+    //app.use(homeController.getHome);
   });
 })
